@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <h2>Math Operators with User Input</h2>
+
+        Enter First Number:
+        <input type = "number" id = "num1"> <br><br>
+
+        Enter Second Number:
+        <input type = "number" id = "num2"> <br><br>
+
+        <button onclick = "calculate()">Calculate</button>
+
+        <p id = "result"></p>
+
+        <script>
+            function calculate(){
+
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+
+                let output = "";
+
+                output += "Addition (a + b) = " + (a + b) + "<br>";
+                output += "Substraction (a - b) = " + (a - b) + "<br>";
+                output += "Multiplication (a * b) = " + (a * b) + "<br>";
+                output += "Division (a / b) = " + (a / b) + "<br>";
+                output += "Modulus (a % b) = " + (a % b) + "<br>";
+                output += "Exponentiation (a ** b) = " + (a ** b) + "<br>";
+
+                a ++;
+                b --;
+
+                output += "Increment of first number (a ++) = " + a + "<br>";
+                output += "Decrement of first number (b --) = " + b + "<br>";
+
+                document.getElementById("result").innerHTML = output;
+            }
+        </script>
+    </body>
+</html>

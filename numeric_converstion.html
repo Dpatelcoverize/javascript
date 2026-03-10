@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h2>Numeric Conversion</h2>
+
+        <input type = "text" id = "userValue" placeholder = "Enter a Number">
+        <br><br>
+
+        <button onclick = "convertNumber()">Convert</button>
+
+        <p id = "result1"></p>
+        <p id = "result2"></p>
+
+        <script>
+            function convertNumber(){
+                
+                let str = document.getElementById("userValue").value;
+
+                //show type before conversion
+                document.getElementById("result1").innerHTML = "Type before conversion: " +typeof str;
+
+                //convert string to number
+                let num = Number(str);
+
+                //show type after conversion
+                document.getElementById("result2").innerHTML = "Type after conversion: " + typeof num;
+
+                //alert message based on user input
+                alert("Converted number is: " + num);
+            }
+        </script>
+    </body>
+</html>

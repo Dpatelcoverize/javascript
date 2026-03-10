@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>UNARY OPERATOR</h2>
+        <p id = "number">0</p>
+
+        <input type = "text" id = "userNumber" placeholder = "Enter a number">
+
+        <button onclick = "increase()">Increase</button>
+
+        <script>
+            function increase(){
+
+                let value = document.getElementById("userNumber").value;
+
+                value ++ ;
+
+                document.getElementById("number").innerHTML = value;
+            }
+            //let x = 1;
+
+           // x = -x;
+            //alert(x);
+        </script>
+    </body>
+</html>

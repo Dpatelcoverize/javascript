@@ -1,0 +1,52 @@
+<!--<html>
+    <body>
+        <p>STRING CONVERSIONS</p>
+
+        <script>
+            "use strict";
+
+            let value = true;
+            alert (typeof value); //boolean
+
+            value = String(value); //now string is true
+            alert(typeof value); //string
+        </script>
+    </body>
+</html> -->
+
+<html>
+    <body>
+        <h2>STRING CONVERSIONS</h2>
+
+        <input type = "text" id = "userValue" placeholder = "Enter true or false">
+        <br><br>
+
+        <button onclick = "convertValue()">Convert</button>
+
+        <p id = "result1"></p>
+        <p id = "result2"></p>
+
+        <script>
+            //"use strict";
+            //"use strict" enables strict mode in JavaScript which helps
+            //write safer code by preventing common mistakes.
+            //let x = 10;
+
+            function convertValue(){
+                let value = document.getElementById("userValue").value;
+                /*getElementById("userValue") → finds the input box
+                .value → gets the value entered by the user*/
+
+            //show original type
+            document.getElementById("result1").innerHTML = "Type before conversion: " + typeof value;
+
+            //convert boolean to string
+            value = String(value);
+
+            //show new type
+            document.getElementById("result2").innerHTML = "Type after conversion: " + typeof value;
+            }
+
+        </script>
+    </body>
+</html>

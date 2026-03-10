@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h2>Boolean Conversion</h2>
+
+        <input type = "text" id = "userValue" placeholder="Enter a value">
+        <br><br>
+
+        <button onclick="convertBoolean()">Convert</button>
+
+        <p id = "result1"></p>
+        <p id = "result2"></p>
+
+        <script>
+            function convertBoolean(){
+
+                let value = document.getElementById("userValue").value;
+
+                //show type before conversion
+                document.getElementById("result1").innerHTML = "Type before conversion: " + typeof value;
+
+                //convert string to number first
+                let num = Number(value);
+
+                //convert to boolean
+                let boolValue = Boolean(num);
+
+                //show type after cpnversion
+                document.getElementById("result2").innerHTML = "Type after conversion: " + typeof boolValue;
+
+                alert("Converted Number is: " + boolValue)
+            }
+        </script>
+    </body>
+</html>
