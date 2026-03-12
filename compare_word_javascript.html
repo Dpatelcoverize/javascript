@@ -1,0 +1,24 @@
+<html>
+    <body>
+
+        Enter a word:
+        <input type="text" id="word">
+
+        <button onclick="checkword()">Check</button>
+
+        <script>
+
+            function checkword(){
+
+                let w = document.getElementById("word").value;
+
+                if(w == "JavaScript"){
+                    alert("Correct Word");
+                }
+                else{
+                    alert("Wrong Word");
+                }
+            }
+        </script>
+    </body>
+</html>

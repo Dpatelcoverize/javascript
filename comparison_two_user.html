@@ -1,0 +1,31 @@
+<html>
+    <body>
+
+        Enter first number:
+        <input type="number" id="num1"><br><br>
+
+        Enter second number:
+        <input type="number" id="num2"><br><br>
+
+        <button onclick="compare()">Compare</button>
+
+        <script>
+
+            function compare(){
+
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+
+                if(a > b){
+                    alert("First number is greater");
+                }
+                else if(a < b){
+                    alert("Second number is greater");
+                }
+                else{
+                    alert("Both numbers are equal");
+                }
+            }
+        </script>
+    </body>
+</html>
