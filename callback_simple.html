@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            function greet(name){
+                alert("Hello " + name);
+            }
+
+            function processUser(callback){
+                let username = "World";
+                callback(username);
+            }
+            processUser(greet);
+        </script>
+    </body>
+</html>
