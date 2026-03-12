@@ -1,0 +1,40 @@
+<html>
+    <body>
+        Enter day number (1 - 7):
+        <input type = "number" id = "day">
+        <button onclick = "findDay()">Check</button>
+
+        <script>
+            function findDay(){
+
+                let d = Number(document.getElementById("day").value);
+
+                switch(d){
+                    case 1:
+                        alert("Monday");
+                        break;
+                    case 2:
+                        alert("Tuesday");
+                        break;
+                    case 3:
+                        alert("Wednesday");
+                        break;
+                    case 4:
+                        alert("Thursday");
+                        break;
+                    case 5:
+                        alert("Friday");
+                        break;
+                    case 6:
+                        alert("Saturday");
+                        break;
+                    case 7:
+                        alert("Sunday");
+                        break;
+                    default:
+                        alert("Invalid Day");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+        Enter a Number (1 - 3):
+        <input type = "number" id = "num">
+
+        <button onclick="checkNumber()">Check</button>
+
+        <script>
+
+            function checkNumber(){
+                let value = Number(document.getElementById("num").value);
+
+                switch(value){
+
+                    case 1:
+                        alert("You selected one");
+                        break;
+                    case 2:
+                        alert("You selected two");
+                        break;
+                    case 3:
+                        alert("You selected three");
+                        break;
+                    default:
+                        alert("Invalid Number");
+                }
+            }
+        </script>
+    </body>
+</html>

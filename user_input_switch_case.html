@@ -1,0 +1,31 @@
+<html>
+    <body>
+        Enter a number between (1 - 3):
+        <input type = "number" id = "num">
+        <button onclick = "checkNumber()">Check</button>
+
+        <p id = "result"></p>
+
+        <script>
+            function checkNumber(){
+                let value = Number(document.getElementById("num").value);
+                let message;
+
+                switch(value){
+                    case 1:
+                        message = "You selected One";
+                        break;
+                    case 2:
+                        message = "You selected Two";
+                        break;
+                    case 3:
+                        message = "You selected Three";
+                        break;
+                    default:
+                        message = "Invalid Number";
+                }
+                document.getElementById("result").innerHTML = message;
+            }
+        </script>
+    </body>
+</html>
