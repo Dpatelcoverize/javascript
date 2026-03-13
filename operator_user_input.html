@@ -1,0 +1,23 @@
+<html>
+    <body>
+
+        Enter age:
+        <input type="number" id="age">
+
+        <button onclick="check()">Check</button>
+
+        <script>
+            function check(){
+
+                let age = Number(document.getElementById("age").value);
+
+                if(age >= 18 && age <= 60){
+                    alert("Working age group");
+                }
+                else{
+                    alert("Not in age group");
+                }
+            }
+        </script>
+    </body>
+</html>
