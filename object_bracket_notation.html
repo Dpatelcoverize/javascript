@@ -1,0 +1,24 @@
+<html>
+    <body>
+
+        <h3>JavaScript Bracket Notation</h3>
+        <p id="result"></p>
+
+        <script>
+            let person = {
+                name: "Devanshi",
+                age: 21,
+                city: "Ahmedabad"
+            };
+            //Accessing values using bracket notation
+            let personName = person["name"];
+            let personAge = person["age"];
+            let personCity = person["city"];
+
+            document.getElementById("result").innerHTML = 
+            "Name: " + personName + "<br>" +
+            "Age: " + personAge + "<br>" +
+            "City: " + personCity;
+        </script>
+    </body>
+</html>

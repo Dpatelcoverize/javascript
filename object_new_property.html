@@ -1,0 +1,25 @@
+<html>
+    <body>
+
+        <h2>Add New Property</h2>
+        <p id="result"></p>
+
+        <script>
+
+            let person = {
+                name: "Devanshi",
+                age: 21
+            };
+
+            //Adding new property
+            person["city"] = "Ahmedabad";
+            person["profession"] = "Student";
+
+            document.getElementById("result").innerHTML = 
+            "Name: " + person.name + "<br>" +
+            "Age: " + person.age + "<br>" +
+            "City: " + person.city + "<br>" +
+            "Profession: " + person.profession;
+        </script>
+    </body>
+</html>

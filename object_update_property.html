@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>Update Object Property</h2>
+        <p id="result"></p>
+
+        <script>
+
+            let person = {
+                name: "Devanshi",
+                age: 21,
+                city: "Ahmedabad"
+            };
+
+            //updating property
+            person.age = 22;
+            person["city"] = "Surat";
+
+            document.getElementById("result").innerHTML =
+            "Name: " + person.name + "<br>" +
+            "Age: " + person.age + "<br>" +
+            "City: " + person.city;
+            
+        </script>
+    </body>
+</html>
