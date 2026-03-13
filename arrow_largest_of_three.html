@@ -1,0 +1,38 @@
+<html>
+    <body>
+
+        Enter first number:
+        <input type="number" id="num1"><br><br>
+
+        Enter second number:
+        <input type="number" id="num2"><br><br>
+
+        Enter third number:
+        <input type="number" id="num3"><br><br>
+
+        <button onclick="findLargest()">Find Largest</button>
+
+        <script>
+            let largest = (a, b, c) => {
+                if(a > b && b > c){
+                    return a;
+                }
+                else if(b > a && b > c){
+                    return a;
+                }
+                else{
+                    return c;
+                }
+            };
+
+            function findLargest(){
+
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+                let c = Number(document.getElementById("num3").value);
+
+                alert ("Largest number is: " + largest(a,b,c));
+            }
+        </script>
+    </body>
+</html>
