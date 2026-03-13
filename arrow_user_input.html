@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <input type="number" id="num">
+        <button onclick="showSquare()">Square</button>
+        <script>
+            let square = n => n * n;
+            function showSquare(){
+                let n = document.getElementById("num").value;
+                alert(square(n));
+            }
+        </script>
+    </body>
+</html>
