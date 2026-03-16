@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <h2>Calculator using Object Method</h2>
+
+        Enter First Number:
+        <input type="number" id="num1"><br><br>
+
+        Enter Second Number:
+        <input type="number" id="num2"><br><br>
+
+        <button onclick="calculate.add()">ADD</button>
+        <button onclick="calculate.subtract()">SUBTRACT</button>
+        <button onclick="calculate.multiply()">MULTIPLY</button>
+        <button onclick="calculate.divide()">DIVIDE</button>
+
+        <p id="result"></p>
+
+        <script>
+            let calculate = {
+                num1: 0,
+                num2: 0,
+
+                readValues: function(){
+                    this.num1 = Number(document.getElementById("num1").value);
+                    this.num2 = Number(document.getElementById("num2").value);
+                },
+
+                add: function(){
+                    this.readValues();
+                    document.getElementById("result").innerHTML = "Addition: " + (this.num1 + this.num2);
+                },
+                subtract: function(){
+                    this.readValues();
+                    document.getElementById("result").innerHTML = "Subtract: " + (this.num1 - this.num2);
+                },
+                multiply: function(){
+                    this.readValues();
+                    document.getElementById("result").innerHTML = "Multiply: " + (this.num1 * this.num2);
+                },
+                divide: function(){
+                    this.readValues();
+                    document.getElementById("result").innerHTML = "Division: " + (this.num1 / this.num2);
+                },
+            };
+
+        </script>
+        
+    </body>
+</html>
