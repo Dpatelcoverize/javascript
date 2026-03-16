@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h3>Using "this" keyword</h3>
+
+        <p id="result"></p>
+
+        <script>
+            let car = {
+                brand: "Toyota",
+                model: "Fortuner",
+                fullName: function(){
+                    return this.brand + " " + this.model;
+                }
+            };
+
+            document.getElementById("result").innerHTML = car.fullName();
+        </script>
+    </body>
+</html>

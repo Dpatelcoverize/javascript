@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h2>Object Method Example</h2>
+        <p id="demo"></p>
+
+        <script>
+            let person = {
+                name: "Devanshi",
+                age: 21,
+                greet: function(){
+                    return "Hello, my age is " + this.age;
+                }
+            };
+
+            document.getElementById("demo").innerHTML = person.greet();
+        </script>
+    </body>
+</html>
