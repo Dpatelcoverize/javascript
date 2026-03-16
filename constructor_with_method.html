@@ -1,0 +1,36 @@
+<html>
+    <body>
+
+        <p id="result"></p>
+
+        <script>
+
+            function Car(brand, model){  //This defines a constructor function named Car. A constructor function is used to create objects with the same structure.
+                //Parameters: - brand - model
+                this.brand = brand;
+                this.model = model;
+                /*this refers to the new object that will be created using new.
+
+                    So when an object is created:
+                    - brand value will be stored in this.brand
+                    - model value will be stored in this.model */
+                this.show = function(){
+                    return this.brand + " " + this.model;
+                }
+                /*This creates a method called show.
+                    A method is simply a function inside an object */
+            }
+
+            let car1 = new Car("Toyota", "Fortuner");
+            /*The new keyword:
+            - Creates a new empty object
+            - Sets this to that object
+            - Assigns properties (brand, model)
+            - Returns the object */
+
+            document.getElementById("result").innerHTML = car1.show();
+            
+//A constructor function is used to create objects with properties and methods using the new keyword.
+        </script>
+    </body>
+</html>

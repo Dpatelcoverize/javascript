@@ -1,0 +1,27 @@
+<html>
+    <body>
+
+        <h2>Accumulator</h2>
+
+        <p id="demo"></p>
+
+        <script>
+
+            function Accumulator(startingValue){
+
+                this.value = startingValue;
+
+                this.read = function(){
+                    this.value += Number(prompt("Enter a number: ", 0));
+                };
+            }
+            let accumulator = new Accumulator(5);
+
+            accumulator.read();
+            accumulator.read();
+
+            document.getElementById("demo").innerHTML = accumulator.value;
+            
+        </script>
+    </body>
+</html>

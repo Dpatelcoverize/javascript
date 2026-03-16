@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>Constructor Example</h2>
+
+        <p id="demo"></p>
+
+        <script>
+
+            function Person(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+            let p1 = new Person ("Devanshi", 21);
+            let p2 = new Person ("Diva", 25);
+            let p3 = new Person ("Liya", 20)
+
+            document.getElementById("demo").innerHTML = p1.name + " " + p1.age + "<br>" + p2.name + " " + p2.age + "<br>" + p3.name + " " + p3.age;
+
+        </script>
+    </body>
+</html>

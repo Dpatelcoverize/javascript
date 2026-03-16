@@ -1,0 +1,24 @@
+<html>
+    <body>
+
+        <p id="demo"></p>
+
+        <script>
+
+            function User(name){
+
+                if(!new.target){
+                    alert("Please use the new operator");
+                    return;
+                }
+                /* new.target is a special JavaScript property.
+                   It checks whether the function was called using new or not. */
+                this.name = name;
+            }
+            let u1 = new User("Devanshi"); //correct
+
+            document.getElementById("demo").innerHTML = u1.name;
+
+        </script>
+    </body>
+</html>

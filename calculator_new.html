@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <h2>Calculator using Constructor</h2>
+
+        <p id="demo"></p>
+
+        <script>
+
+            function Calculator(a, b){
+
+                this.a = a;
+                this.b = b;
+
+                this.add = function(){
+                    return this.a + this.b;
+                };
+
+                this.substract = function(){
+                    return this.a - this.b;
+                };
+
+                this.multiply = function(){
+                    return this.a * this.b;
+                };
+
+                this.divide = function(){
+                    return this.a / this.b;
+                };
+            }
+
+            let calc = new Calculator(20, 5);
+
+            let result =
+            "Addition: " + calc.add() + "<br>" +
+            "Substraction: " + calc.substract() + "<br>" +
+            "Multiplication: " + calc.multiply() + "<br>" +
+            "Division: " + calc.divide();
+
+            document.getElementById("demo").innerHTML = result;
+            
+        </script>
+    </body>
+</html>
