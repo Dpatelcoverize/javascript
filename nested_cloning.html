@@ -1,0 +1,25 @@
+<html>
+    <body>
+
+        <p id="demo"></p>
+
+        <script>
+
+            let user = {
+                name: "Devanshi",
+                address: {              // address is another object inside user. 
+                    city: "Ahmedabad",
+                    state: "Gujarat"
+                }
+            };
+
+            let clone = { ...user };  //...user is called the spread operator.
+
+            clone.address.city = "Surat";
+
+            document.getElementById("demo").innerHTML = user.address.city;
+            // user.address -> same object
+            // clone.address -> same object
+        </script>
+    </body>
+</html>

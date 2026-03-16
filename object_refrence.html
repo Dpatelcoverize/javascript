@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>Object Reference</h2>
+
+        <p id="demo"></p>
+
+        <script>
+
+            let user = {
+                name: "Devanshi",
+                age: 21
+            };
+
+            let admin = user; //reference copy
+
+            admin.name = "Admin";
+
+            document.getElementById("demo").innerHTML = user.name;
+            
+        </script>
+    </body>
+</html>
