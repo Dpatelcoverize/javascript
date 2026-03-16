@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>Hidden Property using Symbol</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            let id = Symbol("id");  //symbol creates unique identifier...even if two symbols have same name, they are different
+
+            let user = {
+                name: "Devnashi",
+                age: 21,
+                [id]: 12345  //id doest not appear in the loop...So [id] is a hidden property
+            };
+
+            let text = "";  //this variable will store the result for display
+
+            for(let key in user){
+                text += key + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>

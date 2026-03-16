@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h2>Global Symbol</h2>
+
+        <p id="demo"></p>
+
+        <script>
+
+            let sym1 = Symbol.for("id"); //Symbol.for() creates or accesses a global symbol  - The symbol is stored in the global registry
+            let sym2 = Symbol.for("id"); // This does not create a new symbol
+
+            document.getElementById("demo").innerHTML = (sym1 === sym2);  // === checks strict equality
+
+            //This puts the result (true) inside the HTML element with id "demo".
+            
+        </script>
+    </body>
+</html>
