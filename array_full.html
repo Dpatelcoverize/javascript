@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>Array Method</h2>
+        <p id="output"></p>
+
+        <script>
+            let arr = [" A ", " B "];
+
+            //Add
+            arr.push("C");
+            arr.unshift("Strat");
+
+            //Remove
+            arr.pop();
+            arr.shift();
+
+            //Splice
+            arr.splice(1, 0, " X ");
+
+            document.getElementById("output").innerHTML = arr;
+
+        </script>
+    </body>
+</html>
