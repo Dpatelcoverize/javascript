@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h2>Methods of Primitives</h2>
+
+        <p id="output"></p>
+
+        <script>
+
+            //STRING METHOD
+            let name = "devanshi";
+            let upper = name.toUpperCase(); //converts to uppercase
+
+            //NUMBER METHOD
+            let num = 10.567;
+            let fixed = num.toFixed(2);  //keeps 2 decimal places
+
+            //BOOLEAN METHOD
+            let isStudent = true;
+            let boolStr = isStudent.toString();  //converts boolean to string
+
+            //COMBINE OUTPUT
+            let result = 
+                "String Method: " + upper + "<br>" + 
+                "Number Method: " + fixed + "<br>" +
+                "Boolean Method: " + boolStr;
+            
+            document.getElementById("output").innerHTML = result;
+
+        </script>
+    </body>
+</html>
