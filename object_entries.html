@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="output"></p>
+
+    <script>
+        let user = {
+            name: "Devanshi",
+            age: 20,
+            city: "Ahmedabad",
+        };
+
+        //Transform: increase age by 5
+        let updatedUser = Object.fromEntries(
+            Object.entries(user).map(([key, value]) => {
+                if (key == "age"){
+                    return [key, value + 5];
+                }
+                return [key, value];
+            })
+        );
+
+        document.getElementById("output").innerHTML =
+            "Original Age: " + user.age + "<br>" +
+            "Updates Age: " + updatedUser.age;
+    </script>
+</body>
+</html>

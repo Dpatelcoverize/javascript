@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <p id="keys"></p>
+        <p id="values"></p>
+        <p id="entries"></p>
+        <script>
+            let user = {
+                name: "Devanshi",
+                age: 20,
+                city: "Ahmedabad"
+            };
+
+            //Get keys
+            let keys = Object.keys(user);
+            document.getElementById("keys").innerHTML = "<b>Keys: </b><br>";
+            for (let k of keys){
+                document.getElementById("keys").innerHTML += k + "<br>";
+            }
+           
+            //Get values
+            let values = Object.values(user);
+            document.getElementById("values").innerHTML = "<b>Values: </b><br>";
+            for (let v of values) {
+                document.getElementById("values").innerHTML += v + "<br>";
+            }
+
+            //Get enteries
+            let entries = Object.entries(user);
+            document.getElementById("entries").innerHTML = "<b>Entries: </b><br>";
+            for (let [key, value] of entries) {
+                document.getElementById("entries").innerHTML += key + " : " + value + "<br>"
+            }
+
+        </script>
+    </body>
+</html>
