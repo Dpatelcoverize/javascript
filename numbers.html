@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p id="output"></p>
+
+        <script>
+            let data = {
+                a : 10,
+                b : 20,
+                c : 30
+            };
+
+            let result = Object.fromEntries(
+                Object.entries(data).map(([key, value]) =>{
+                    return [key, value % 2];
+                })
+            );
+
+            document.getElementById("output").innerHTML = 
+                "Original: " + data.a + ", " + data.b + ", " + data.c + "<br>" +
+                "Update: " + result.a + ", " + result.b + ", " + result.c;
+        </script>
+    </body>
+</html>

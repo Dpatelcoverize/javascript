@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h2>Convert Number to Binary, Octal and Hexa</h2>
+
+        <label>Enter a number: </label>
+        <input type="number" id="num">
+
+        <br><br>
+
+        <button onclick="convertNumber()">Convert</button>
+
+        <p id="output"></p>
+
+        <script>
+            function convertNumber(){
+                let num = document.getElementById("num").value;
+
+                //convert string input to number
+                num = Number(num);
+
+                //Conversions
+                let binary = num.toString(2);
+                let octal = num.toString(8);
+                let hex = num.toString(16);
+
+                //Display result
+                document.getElementById("output").innerHTML =
+                    "Number: " + num + "<br>" +
+                    "Binary: " + binary + "<br>" +
+                    "Octal: " + octal + "<br>" +
+                    "Hex: " +hex;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <h2>Hex, Binary, Octal Numbers</h2>
+
+        <p id="output"></p>
+
+        <script>
+            "use strict";
+
+            //Binary number
+            let binary = 0b1010;
+
+            //Octal number
+            let octal = 0o12;
+
+            //Hexadecimal number
+            let hex = 0xA;
+
+            //Convert to different bases
+            let num = 50;
+
+            let binaryConvert = num.toString(2);
+            let octalConvert = num.toString(8);
+            let hexConvert = num.toString(16);
+
+            //Display output
+            document.getElementById("output").innerHTML = 
+                "<b>Original Values: </b><br>" + 
+                "Binary (0b1010) = " + binary + "<br>" +
+                "Octal (0o12) = " + octal + "<br>" +
+                "Hex (0xA) + " + hex + "<br><br>" +
+
+                "<b>Conversions of 50: </b><br>" +
+                "Binary = " + binaryConvert + "<br>" +
+                "Octal = " + octalConvert + "<br>" +
+                "Hex = " + hexConvert;
+                
+        </script>
+    </body>
+</html>

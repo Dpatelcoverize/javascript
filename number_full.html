@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <p id="output"></p>
+
+        <script>
+            "use strict";
+
+            //Exponential numbers
+            let billion = 1e9;
+            let largeNum = 7.3e9;
+
+            //Small number
+            let smallNum = 3e-2;
+
+            //Normal numbers
+            let num1 = 1000;
+            let num2 = 25.6789;
+
+            //Number methods
+            let fixed = num2.toFixed(2);
+
+            //Display output
+            document.getElementById("output").innerHTML =
+                "<b>Exponential Numbers: </b><br>" +
+                "1e9 = " + billion + "<br>" +
+                "7.3e9 = " + largeNum + "<br><br>" +
+
+                "<b>Small Number:</b><br>" +
+                "3e-2 = " + smallNum + "<br><br>" +
+
+                "<b>Normal Numbers:</b><br>" +
+                "num1 = " + num1 + "<br>" +
+                "num2 = " + num2 + "<br><br>" +
+
+                "<b>Number Method:</b><br>" +
+                "toFixed(2) = " + fixed;
+
+                //Alert example
+                alert("7.3e9 = " + largeNum);
+
+        </script>
+    </body>
+</html>

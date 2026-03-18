@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2>Rounding Method</h2>
+
+        <p id="output"></p>
+
+        <script>
+            let num = 10.75;
+
+            let round = Math.round(num); //nearest
+            let floor = Math.floor(num); //down
+            let ceil = Math.ceil(num); //up
+            let trunc = Math.trunc(num); //remove decimal
+
+            document.getElementById("output").innerHTML =
+                "Original Number: " + num + "<br><br>" +
+                "Math.round(): " + round + "<br>" +
+                "Math.floor(): " + floor + "<br>" +
+                "Math.ceil(): " + ceil + "<br>" +
+                "Math.trunc(): " + trunc;
+        </script>
+    </body>
+</html>
