@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <h2>JavaScript Strings</h2>
+        <p id="output"></p>
+
+        <script>
+            let str = "Hello";
+
+            //Length
+            let length = str.length;
+
+            //convert case
+            let upper = str.toUpperCase();
+            let lower = str.toLowerCase();
+
+            //Find text
+            let index = str.indexOf("Devanshi");
+
+            //Slice
+            let part = str.slice(0, 5);
+
+            //Replace
+            let newStr = str.replace("Devanshi", "World");
+
+            //Includes
+            let check = str.includes("Hello");
+
+            //Display output
+            document.getElementById("output").innerHTML =
+                "Original String: " + str + "<br><br>" +
+
+                "<b>Length:</b> " + length + "<br>" +
+                "<b>Uppercase:</b> " + upper + "<br>" +
+                "<b>Lowercase:</b> " + lower + "<br>" +
+                "<b>Index of 'Devanshi':</b> " + index + "<br>" +
+                "<b>Slice (0-5):</b> " + part + "<br>" +
+                "<b>Replace:</b> " + newStr + "<br>" +
+                "<b>Includes 'Hello':</b> " + check;
+        </script>
+    </body>
+</html>
