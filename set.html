@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <h2>SET</h2>
+
+        <p id="output"></p>
+
+        <script>
+            //Create set
+            let set = new Set ([10, 20, 30, 10, 20]);
+
+            //Add values
+            set.add(40);
+            set.add(50);
+
+            //Delete value
+            let deleted = set.delete(20);
+
+            //Check value
+            let hasValue = set.has(30);
+
+            //Size of set
+            let size = set.size;
+
+            //Display output
+            let result = "";
+
+            result += "<b>Set Values (no duplicates): </b><br>";
+            for (let value of set){
+                result += value + "<br>";
+            }
+
+            result += "<br> Deleted 20: " + deleted;
+            result += "<br> Has 30: " +hasValue;
+            result += "<br>Size: " + size;
+
+            //Clear set
+            //str.clear();
+
+            document.getElementById("output").innerHTML = result;
+        </script>
+    </body>
+</html>
