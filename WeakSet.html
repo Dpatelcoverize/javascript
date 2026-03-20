@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h3>WeakSet</h3>
+        <p id="output"></p>
+
+        <script>
+            // Create WeakSet
+let weakSet = new WeakSet();
+
+// Create objects
+let obj1 = { name: "A" };
+let obj2 = { name: "B" };
+
+// Add objects
+weakSet.add(obj1);
+weakSet.add(obj2);
+
+// Check object
+let hasObj1 = weakSet.has(obj1);
+
+// Delete object
+weakSet.delete(obj1);
+
+// After delete
+let afterDelete = weakSet.has(obj1);
+
+// Display output
+document.getElementById("output").innerHTML =
+    "Has obj1: " + hasObj1 + "<br>" +
+    "After Delete: " + afterDelete;
+    
+        </script>
+    </body>
+</html>

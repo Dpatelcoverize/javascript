@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h3>WeakMap</h3>
+        <p id="output"></p>
+
+        <script>
+            //Create WeakMap
+            let weakMap = new WeakMap();
+
+            //Create object key
+            let obj = {name: "Devanshi" };
+
+            //Set value
+            weakMap.set(obj, "Student");
+
+            //Get value
+            let value = weakMap.get(obj);
+
+            //Check Key
+            let hasKey = weakMap.has(obj);
+
+            //Delete key
+            weakMap.delete(obj);
+
+            //After delete
+            let afterDelete = weakMap.has(obj);
+
+            //Display output
+            document.getElementById("output").innerHTML = 
+                "Value: " + value + "<br>" +
+                "Has Key: " + hasKey + "<br>" +
+                "After Delete: " + afterDelete;
+        </script>
+    </body>
+</html>
