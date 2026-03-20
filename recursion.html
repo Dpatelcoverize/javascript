@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>RECURSION</h2>
+        <p id="output"></p>
+
+        <script>
+            function factorial(n){
+                if (n === 1) {
+                    return 1;
+                }
+                return n * factorial(n - 1);
+            }
+            let result = factorial(5);
+
+            document.getElementById("output").innerHTML =
+                "Factorial of 5 = " + result;
+        </script>
+    </body>
+</html>

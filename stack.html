@@ -1,0 +1,62 @@
+<!--<html>
+    <body>
+        <h2>STACK</h2>
+        <p id="output"></p>
+
+        <script>
+            let stack = [];
+
+            stack.push(10);
+            stack.push(20);
+            stack.push(30);
+
+            let removed = stack.pop();
+
+            let top = stack.length > 0 ? stack[stack.length - 1] : "No elements";
+
+            let isEmpty = stack.length === 0;
+
+            document.getElementById("output").innerHTML = 
+                "<b>Stack Element: </b> " + stack + "<br>" +
+                "Removed Element: " + removed + "<br>" +
+                "Top Element: " + top + "<br>" +
+                "Is Empty: " + isEmpty;
+        </script>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Stack Example</h2>
+<p id="output"></p>
+
+<script>
+// Create stack using array
+let stack = [];
+
+// Push (add elements)
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+// Pop (remove top)
+let removed = stack.pop();
+
+// Peek (top element)
+let top = stack[stack.length - 1];
+
+// Check empty
+let isEmpty = stack.length === 0;
+
+// Display output
+document.getElementById("output").innerHTML =
+    "<b>Stack Elements:</b> " + stack + "<br>" +
+    "Removed Element: " + removed + "<br>" +
+    "Top Element: " + top + "<br>" +
+    "Is Empty: " + isEmpty;
+</script>
+
+</body>
+</html>
