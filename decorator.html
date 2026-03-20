@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2>DECORATOR</h2>
+        <p id="output"></p>
+
+        <script>
+            function sayHello(name) {
+                return "Hello " + name;
+            }
+
+            //Decorator
+            function wrapper(func){
+                return function(name) {
+                    return func(name).toLowerCase();
+                };
+            }
+            let decorated = wrapper(sayHello);
+
+            document.getElementById("output").innerHTML = 
+                decorated("DEVANSHI");
+        </script>
+    </body>
+</html>
