@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="output"></p>
+
+        <script>
+            var name = "Devanshi";
+
+            let value1 = window.name;
+            let value2 = globalThis.name;
+
+            let hasAlert = typeof window.alert === "function";
+
+            document.getElementById("output").innerHTML = 
+                "window.name: " + value1 + "<br>" +
+                "globalThis.name: " + value2 + "<br>" +
+                "alert exists: + hasAlert;"
+        </script>
+    </body>
+</html>
